@@ -37,9 +37,10 @@
 
             </StackPanel>
             <Label Content="Username to Launch" Foreground="#FF636363" Margin="114,34,136,133" Grid.ColumnSpan="4"/>
-          
-            <TextBox Grid.ColumnSpan="4" Margin="119,14,82,162" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" Foreground="White" BorderBrush="{x:Null}" FontFamily="Arial" Panel.ZIndex="13" Background="{x:Null}" TextChanged="TextBox_TextChanged"/>
+
+            <TextBox Name="Username" Grid.ColumnSpan="4" Margin="119,14,82,162" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" Foreground="White" BorderBrush="{x:Null}" FontFamily="Arial" Panel.ZIndex="13" Background="{x:Null}" TextChanged="TextBox_TextChanged"/>
             <Border Background="#151515" Margin="119,14,82,162" CornerRadius="5" Grid.ColumnSpan="4"/>
+            <Border Background="#151515" Margin="67,68,134,108" CornerRadius="5" Grid.ColumnSpan="4"/>
 
             <Grid Name="Welcome" Visibility="Hidden" Panel.ZIndex="100" Grid.ColumnSpan="4" >
                 <Border Background="#101010" CornerRadius="10" BorderThickness="1" BorderBrush="#151515" />
@@ -51,6 +52,13 @@
                 <Button Margin="298,167,10,10" Opacity="0.01" />
             </Grid>
             <Label Content="v1.0.0" Foreground="#FF636363" Margin="0,176,7,-9"/>
+            <Border Background="#151515" Margin="64,68,82,108" CornerRadius="5" Grid.Column="3"/>
+            <Button Grid.Column="3" Margin="64,69,82,110" Panel.ZIndex="10" Opacity="0.01" Click="Button_Click_1"/>
+            <Border Background="#151515" Margin="70,121,82,55" CornerRadius="5" Grid.ColumnSpan="4"/>
+            <Button Margin="70,121,82,58" Panel.ZIndex="10" Opacity="0.01" Click="Button_Click" Grid.ColumnSpan="4"/>
+            <Label Name="PathFol" Content="Path will appear here" VerticalAlignment="Center" Foreground="White" Margin="67,66,136,108" FontSize="10" Grid.ColumnSpan="4"/>
+            <Label Name="PthFol" Content="Import" VerticalAlignment="Top" Foreground="White" Margin="64,68,82,0" FontSize="10" Grid.Column="3"/>
+            <Label Name="Launch" Content="Launch" Foreground="White" Margin="70,121,82,55" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" FontWeight="Bold"/>
 
         </Grid>
     </Grid>
